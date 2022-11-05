@@ -4,3 +4,10 @@ renamelandsat.py This script helps users of rename the landsat image and focus o
 landsatinices.py  Calculate most of the spectral indices.
 It's worthwhile that all the scripts have help in order to guid the users.  
 
+To get the benefits of those scripts the following are the right steps.
+
+1- rename granular using the renamelandsat.py
+
+2- extract Landsat files from tar format extractlandsat.py
+
+3- Landsat indices make most of the calculations landsatindices.py
