@@ -36,6 +36,7 @@ output_file_dbi = dirpath + 'dbi_9_test.tif'
 write_raster(dbi, band4.band_crs, band4.band_transform, output_file_dbi)
 plot_plot(output_file_dbi, 'DBI' , 'RdYlGn')
 
+
 savi=SAVI(band4.band, band5.band)
 output_file_savi = dirpath + 'savi.tif'
 write_raster(savi, band4.band_crs, band4.band_transform, output_file_savi)
@@ -54,12 +55,10 @@ write_raster(ndmi, band4.band_crs, band4.band_transform, output_file_ndmi)
 plot_plot(output_file_ndmi, 'NDMI' , 'RdYlBu')
 
 
-
 mndwi = MNDWI(band3.band, band6.band)
 output_file_mndwi = dirpath + 'mndwi_9_test.tif'
 write_raster(mndwi, band3.band_crs, band3.band_transform, output_file_mndwi)
 plot_plot(output_file_mndwi, 'MNDWI' , 'RdYlBu')
-
 
 
 bai = BAI(band4.band, band5.band)
@@ -68,21 +67,16 @@ write_raster(bai, band3.band_crs, band3.band_transform, output_file_bai)
 plot_plot(output_file_bai, 'BAI' , 'PiYG')
 
 
-
 nbri = NBRI(band5.band, band6.band)
 output_file_nbri = dirpath + 'nbri_9_test.tif'
 write_raster(nbri, band3.band_crs, band3.band_transform, output_file_nbri)
 plot_plot(output_file_nbri, 'NBRI' , 'PiYG')
 
 
-
-
 ndbi = NDBI(band6.band, band5.band, ndvi)
 output_file_ndbi = dirpath + 'ndbi_9_test.tif'
 write_raster(ndbi, band3.band_crs, band3.band_transform, output_file_nbri)
 plot_plot(output_file_nbri, 'NBRI' , 'terrain')
-
-
 
 
 
